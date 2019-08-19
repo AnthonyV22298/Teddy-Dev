@@ -13,13 +13,16 @@
   <script src="js/main.js"></script>
 
   <style>
-  html, body{
+  html{
       font-family:'Open Sans', sans-serif;
       font-size: 14px;
       margin: 0;
       min-height: 180px;
       padding: 0;
       width: 900px;
+  }
+
+  body{
       background-color: #2f5876
   }
 
@@ -133,13 +136,13 @@
 
         <div class="modal-icons">
                 
-                    <div class="flex">
-                        <button>
-                        <i class="fa fa-bluetooth" aria-hidden="true"></i>
-                        </button>
-                    </div>
+            <div class="flex">
+                <button>
+                    <i class="fa fa-bluetooth" aria-hidden="true"></i>
+                </button>
+            </div>
                 
-            </div>        
+        </div>        
 
 	  <include src="_includes/datalist-services.html"></include>
 	  <include src="_includes/output_helper.html"></include>
@@ -155,6 +158,8 @@
     		}
 	  });
       </script>
+
+      </div>
 	
       </form>
 
