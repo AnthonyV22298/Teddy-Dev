@@ -92,11 +92,17 @@
       padding: 10rem 0;
       width: 100%;
       max-width: 40rem;
-      background-color: #dadada;
+      background-color: #ffffff;
       align-items: center;
       box-shadow: 0 1px 1.5rem rgba(0,0,0,.1);
       border-radius: 1rem;
       z-index: 1;
+  }
+
+  .flex-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 22px;
   }
 
   .flex {
@@ -142,13 +148,13 @@
   	  <include src="_includes/intro.html"></include>
 
         <div class="modal-icons">
-                
+            <div class="flex-container">
             <div class="flex">
                 <button>
                     <i class="fa fa-bluetooth" aria-hidden="true"></i>
                 </button>
             </div>
-                
+            </div>
         </div>        
 
 	  <include src="_includes/datalist-services.html"></include>
@@ -184,7 +190,7 @@
 
 
     <div class="modal-icons">
-        
+        <div class="flex-container">
             <div class="flex">
                 <a href="https://teddyrobotics.com/" target="_blank">
                     <i class="fa fa-globe"></i>
@@ -196,7 +202,7 @@
                     <i class="fa fa-download"></i>
                 </a>
             </div>
-        
+        </div>
     </div>
 
 
