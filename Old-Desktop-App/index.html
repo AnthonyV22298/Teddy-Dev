@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Teddy Connect</title>
+  </head>
+  <style>
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   }
+  </style>
+  <body>
+    <h1>Welcome to the Teddy Connect Desktop App!</h1>
+    <p>
+    Enter your Robot ID:
+    <script src="client.js" type="text/javascript"></script>
+    <input type="text" id="idInput"=></input>
+    <button onclick="set_robot_id()">Enter</button>
+    </p>
+    <form>
+  	<div>
+  	<p> Connect your robot to Wi-Fi:
+  	</p>
+      <label for="email">SSID:</label>
+      <input type="text" name="email" id="email" required placeholder="ssid">
+    <p>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" placeholder="password">
+  	</p>
+    </div>
+    </form>
+    <button onclick="connect_to_wifi()">Connect</button>
+    <p>
+    <script> require('./renderer.js') </script>
+    Robot Status: <span id="status">Not Connected</span>
+    </p>
+    <form action="https://snap.berkeley.edu/snapsource/snap.html#present:Username=teddyrobotics&ProjectName=Teddy1" target="_blank">
+    <button type="submit">Open Snap project!</button>
+    </form>
+    </button>
+    </form>
+    <div class="footer">
+      <p>Version 0.1.0</p>
+    </div>
+  </body>
+</html>
