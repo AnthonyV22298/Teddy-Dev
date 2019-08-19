@@ -20,6 +20,16 @@
       min-height: 180px;
       padding: 0;
       width: 900px;
+      background-color: #2f5876
+  }
+
+  #wrapper{
+      width: 90%;
+      height: 100vh;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 
   h1{
@@ -72,6 +82,13 @@
       display: flex;
       justify-content: space-between;
       padding: 10px 22px;
+      width: 100%;
+      max-width: 40rem;
+      background-color: #dadada;
+      align-items: center;
+      box-shadow: 0 1px 1.5rem rgba(0,0,0,.1);
+      border-radius: 1rem;
+      z-index: 1;
   }
 
   .flex {
@@ -94,6 +111,7 @@
     </style>
 </head>
 <body ng-app="btScanner" ng-csp>
+    <div class id="wrapper">
     <div class="modal-header">
         <h1 class="logo">
             <img src="images/teddy.jpg" class="logo-icon">Geraldo<span class="version">(1.0.0)</span>
@@ -170,6 +188,8 @@
         </div>
     </div>
 
+
 </form>
+</div>
 </body>
 </html>
